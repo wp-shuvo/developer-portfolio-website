@@ -37,6 +37,10 @@ body{
   border: 1px solid var(--primaeycolor-org);
   cursor: pointer;
 }
+.btn-primary:hover{
+  background: #FFF8F3;
+  color: var(--primaeycolor-org);
+}
 .btn-secnd{
   color: var(--primaeycolor-org);
   font-size: 20px;
@@ -46,6 +50,10 @@ body{
   border: 1px solid var(--primaeycolor-org);
   cursor: pointer;
   background: #FFF8F3;
+}
+.btn-secnd:hover{
+  background: var(--primaeycolor-org);
+  color: #FFF8F3;
 }
 .section-title{
   font-size: 35px;
