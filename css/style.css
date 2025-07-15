@@ -124,10 +124,10 @@ nav ul li a:hover{
 .banner-content{
   max-width: 580px;
 }
-.banner-content,
+/* .banner-content,
 .banner-discription{
   line-height: 20px;
-}
+} */
 /* main style */
 main{
   max-width: 1140px;
@@ -163,7 +163,7 @@ main section{
   margin-top: 50px;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 6px 50px 0 #00000063;
+  box-shadow: 0 0px 20px  #0000003b;
 }
 .skill-title{
   font-size: 20px;
@@ -219,4 +219,80 @@ footer textarea {
 }
 .footer-column p{
   text-align: left;
+}
+
+
+@media screen and (max-width:576px) {
+  .skill-container, 
+  .resume-container,
+  footer,
+  .about-itmes,
+  .banner,
+  nav{
+    flex-direction: column;
+  }
+  nav{
+    margin: 20px;
+  }
+  .header{
+    background-image:none;
+  }
+  .banner{
+    margin: 20px;
+  }
+  .skill-container{
+    gap: 0;
+  }
+  .skill {
+    margin-top: 25px;
+  }
+  .secnd-bg,
+  .about{
+   padding: 20px;
+}
+.footer-column{
+  width: calc(100% - 40px);
+}
+.banner-content h4{
+  font-size: 25px;
+}
+.banner-content h1{
+  font-size: 39px;
+}
+.banner-content p{
+  font-size: 16px;
+}
+.btn-primary{
+  margin-bottom: 10px;
+}
+.bammer-profile-pic{
+  width: 100%;
+  margin-top: 30px;
+  filter: drop-shadow(0 0 5px rgba(255, 136, 8, 0.633));
+}
+
+}
+
+/* tablets media  */
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+  .skill-container,
+  .about-itmes{
+    flex-direction: column;
+    gap: 0;
+  }
+  .skill {
+    margin-top: 25px;
+  }
+  .secnd-bg{
+   padding: 20px;
+}
+footer{
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+.footer-column{
+  width: calc(100% - 40px);
+}
 }
